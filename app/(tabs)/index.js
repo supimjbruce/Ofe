@@ -10,10 +10,10 @@ jbruce.design
 import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 
-export default function TabOneScreen() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Ofe!</Text>
+      <Text style={styles.title}>OFE</Text>
     </View>
   );
 }
@@ -25,7 +25,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 20,
+    fontFamily: 'PirataOne-Regular',
+    fontSize: 200,
     fontWeight: 'bold',
+    color: '#295F4E',
+    letterSpacing: 7,
+    textShadowColor: "rgba(0,0,0,0.25)",
+    textShadowOffset: {width: 6, height: 6},
+    textShadowRadius: 5,
+    shadowOpacity: 0.25,
   },
 });
