@@ -7,7 +7,7 @@ jbruce.design
 .j.
 - - - - - */
 
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, FlatList} from 'react-native';
 import React from 'react';
 
 export default function GospelScreen() {
@@ -16,6 +16,21 @@ export default function GospelScreen() {
       <View style={styles.gospelHeader}>
         <Text style={styles.title}>El Evangelio</Text>
         <Text style={styles.subtitle}>(The Gospel)</Text>
+        <View style={styles.listContainer}>
+          <FlatList
+          data={[
+            {key: 'Creation'},
+            {key: 'Fall'},
+            {key: 'Jesus Coming to Earth'},
+            {key: 'The Cross'},
+            {key: 'Three Days Later'},
+            {key: 'Ascension'},
+            {key: 'His Return'},
+            {key: 'What does this mean for you?'},
+          ]}
+          renderItem={({item}) => <Text style={styles.listItem}>{item.key}</Text>}
+          />
+      </View>
       </View>
     </View>
   );
@@ -46,4 +61,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
   },
+  listContainer: {
+    paddingTop: 25,
+  },
+  listItem: {
+    padding: 10,
+    margin: 10,
+    fontSize: 26,
+    fontWeight: '400',
+    backgroundColor: '#fff',
+  }
 });
