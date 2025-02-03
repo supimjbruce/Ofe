@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#C7B198',
   },
   title: {
     fontFamily: 'PirataOne-Regular',
