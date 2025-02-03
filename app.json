@@ -32,7 +32,11 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Inter-Black.otf"]
+          "fonts":
+          [
+            "./assets/PirataOne-Regular.ttf",
+            "./assets/Poppins-Black.ttf"
+          ]
         }
       ]
     ],
