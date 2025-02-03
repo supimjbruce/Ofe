@@ -31,11 +31,29 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="test"
+        name="gospel"
         options={{ 
-          title: 'Test',
+          title: 'Gospel',
           tabBarIcon: ({color, focused}) => (
-            <Ionicons name={focused ? 'construct-sharp' : 'construct-outline'} color={color} size={24} />
+            <Ionicons name={focused ? 'sunny-sharp' : 'sunny-outline'} color={color} size={24} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="journal"
+        options={{ 
+          title: 'Journal',
+          tabBarIcon: ({color, focused}) => (
+            <Ionicons name={focused ? 'journal-sharp' : 'journal-outline'} color={color} size={24} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{ 
+          title: 'Settings',
+          tabBarIcon: ({color, focused}) => (
+            <Ionicons name={focused ? 'settings-sharp' : 'settings-outline'} color={color} size={24} />
           ),
         }}
       />
