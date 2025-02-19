@@ -12,8 +12,15 @@ import React from "react";
 
 export default function SettingsScreen() {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Settings</Text>
         </View>
     );
-}
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#F0ECE2',
+    },
+});
