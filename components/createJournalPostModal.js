@@ -1,3 +1,12 @@
+/* Ofe */
+/* Create Journal Post Modal [createJournalPostModal.js] */
+
+/*By Jonathan Bruce
+JBruce, LLC
+jbruce.design
+.j.
+- - - - - */
+
 import {View, Text, StyleSheet} from 'react-native';
 import React from "react";
 
