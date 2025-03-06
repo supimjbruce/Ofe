@@ -9,11 +9,13 @@ jbruce.design
 
 import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
+import WelcomeModal from '../../components/welcomeModal';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>OFE</Text>
+    <WelcomeModal></WelcomeModal>
+    <Text style={styles.title}>OFE</Text>
     </View>
   );
 }
